@@ -4,6 +4,9 @@ const path = require("path");
 const CSV_PATH = path.join("/uploads/CSVFILES");
 const csvSchema = new mongoose.Schema(
   {
+    csvFileName: {
+      type: String,
+    },
     csvFileLoc: {
       type: String,
     },
